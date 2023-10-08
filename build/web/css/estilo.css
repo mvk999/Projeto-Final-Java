@@ -1,0 +1,341 @@
+.navbar{background-color: rgb(119, 15, 128);
+}
+.navbar-brand{
+    width: 70px;
+    height: 70px;
+}
+.navbar-toggler{
+    color: #fff;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+    background-color: rgb(119, 15, 128);
+    color: #000;
+}
+
+.dropdown-menu[data-bs-popper]{
+    top: 3.55rem;
+}
+
+.dropdown-item:focus{
+    background-color: rgb(58, 51, 39);
+    color: #000;
+}
+
+.home{
+    background-image: url(../imagens/home.jpg);
+        background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.service{
+    background-color: rgb(45, 36, 24);
+    border-top: 1rem solid rgb(63, 50, 33);
+    border-bottom: 1rem solid rgb(63, 50, 33);
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.janela{
+    height: 20rem;
+    overflow: auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+    flex-direction: column;
+}
+
+.centered-btn {
+    margin-top: 155;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid rgb(119, 15, 128);
+    color: rgb(119, 15, 128);
+    font-weight: bold;
+}
+
+dropdown-item:hover{
+    background-color: rgb(119, 15, 128);
+}
+
+
+table th{
+    background-color: #0dcaf0;
+}
+
+.campoentrada{
+    border-radius: 10px;
+}
+
+row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.rodape{
+       margin-right: 0px;
+    margin-left: 0px; 
+}
+
+.logo-link {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.logo-link img {
+    border-radius: 50%;
+    border: 2px solid rgb(119, 15, 128);
+    transition: transform 0.2s;
+}
+
+.logo-link img:hover {
+    transform: scale(1.1);
+    border-color: rgb(119, 15, 128); /* Nova cor da borda no hover */
+}
+
+
+        footer {
+            background-color: rgb(119, 15, 128);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            position: fixed;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content p {
+            margin-bottom: 5px; /* Margem menor entre parágrafos */
+            flex: 1;
+        }
+
+
+    
+    
+           .contact-form {
+    max-width: 400px;
+    margin: 50px 0 0 50px; /* Adicionado margem à esquerda */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.carousel-item img {
+    max-height: 775px; 
+    width: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.site-container {
+    background-color: #f2f2f2; /* Substitua pela cor desejada */
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.carrosel{
+    margin-top: 75px;
+}
+
+
+.modal {
+  display: none; /* Inicialmente esconde a modal */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Largura máxima da modal */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.modal.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.modal.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.menu-item {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease-out; /* Adicionando uma transição suave */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Move o item para cima quando o mouse está sobre ele */
+}
+
+.botao{
+    color: #fff; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    font-weight: bold;
+        background-color: rgb(119, 15, 128);
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+botao:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: scale(1.05);
+}
+
+.btn.btn-light {
+  border: 2px solid currentColor;
+}
+
+
+
+
+
+ .testimonial-img {
+        width: 200px; /* Defina o tamanho desejado */
+        height: 200px; /* Defina o tamanho desejado */
+        border-radius: 50%; /* Para tornar a imagem circular */
+    }
+    
+    .titulo{
+        margin-top: 120px;
+    }
+    
+    
+    
+    
+    
+    
