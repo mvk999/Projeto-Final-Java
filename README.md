@@ -81,7 +81,7 @@ Este projeto possui caráter acadêmico e foi desenvolvido com o intuito de cons
 ---
 
 ## Autor  
-Marcos Vinícius Pereira
+Marcos Vinícius Pereira e
 Otávio Pacheco
 
 ---
