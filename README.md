@@ -1,37 +1,91 @@
-Projeto Final Java
 
+# Projeto Final Java Web
 
-Este repositório contém o projeto final da disciplina de Linguagem de Programação II. O trabalho foi desenvolvido em dupla por Marcos Vinícius Pereira e Otávio Pacheco, com o objetivo de criar uma aplicação web utilizando Java.
+## Índice  
+- [Descrição do Projeto](#descrição-do-projeto)  
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)  
+- [Arquitetura e Organização do Código](#arquitetura-e-organização-do-código)  
+- [Banco de Dados](#banco-de-dados)  
+- [Configuração do Ambiente](#configuração-do-ambiente)  
+- [Instalação e Deploy](#instalação-e-deploy)  
+- [Uso](#uso)  
+- [Considerações Finais](#considerações-finais)  
+- [Autor](#autor)  
+- [Contato](#contato)
 
-A aplicação desenvolvida é uma plataforma simulada para uma escola, projetada para oferecer uma experiência próxima da realidade, com o objetivo de aprimorar o aprendizado prático. O sistema inclui funcionalidades como cadastro de alunos e professores, registro de ocorrências, autenticação por meio de login e senha, além de integração com um banco de dados externo para armazenamento e gestão das informações. A interface do usuário é desenvolvida utilizando JSP (JavaServer Pages), enquanto o backend é implementado em Java, seguindo os princípios de programação orientada a objetos para garantir modularidade e reutilização de código.
-A estrutura do projeto é organizada da seguinte forma:
+---
 
-/src/: Contém o código fonte Java.
+## Descrição do Projeto  
+Este projeto consiste em uma aplicação web desenvolvida em Java, criada como trabalho final da materia de Linguagem de Programação II. A aplicação tem como objetivo gerenciar entidades por meio de operações CRUD (Create, Read, Update, Delete), aplicando conceitos de programação orientada a objetos, persistência de dados com banco MySQL e deploy em servidor GlassFish.
 
-/build/: Contém as classes Java compiladas e os arquivos JSP gerados.
+---
 
-/web/: Contém os arquivos JSP utilizados para a interface do usuário.
+## Tecnologias Utilizadas  
+- **Java EE** — Plataforma para desenvolvimento da aplicação web robusta e escalável  
+- **NetBeans** — IDE utilizada para desenvolvimento, configuração e deploy da aplicação  
+- **GlassFish** — Servidor de aplicações Java EE para execução da aplicação  
+- **MySQL (via XAMPP)** — Sistema gerenciador de banco de dados relacional para persistência de dados  
+- **HeidiSQL** — Ferramenta para administração visual do banco de dados MySQL
 
-build.xml: Arquivo de configuração do Ant para automatização do processo de build.
+---
 
+## Arquitetura e Organização do Código  
+A aplicação está estruturada segundo as boas práticas para projetos Java web:  
+- Camada de apresentação com Servlets e JSPs ou tecnologias equivalentes  
+- Pacotes organizados por responsabilidade para facilitar manutenção e escalabilidade  
+- Persistência implementada via JDBC ou JPA conectada ao banco MySQL  
+- Arquivos estáticos (CSS, JS, imagens) organizados dentro da pasta `webapp`
 
+---
 
+## Banco de Dados  
+- Banco de dados MySQL configurado localmente, gerenciado pelo XAMPP  
+- Administração do banco realizada via HeidiSQL 
 
-Requisitos
-Java JDK 8 ou superior
-Apache Tomcat 9 ou superior
-Apache Ant para build
+---
 
+## Configuração do Ambiente  
+1. Instale o XAMPP e certifique-se de que o MySQL esteja ativo  
+2. Utilize o HeidiSQL para criar o banco de dados e importar os scripts SQL  
+3. Configure a conexão com o banco no projeto, no arquivo `[nome_do_arquivo_de_configuração]`  
+4. Configure o servidor GlassFish no NetBeans e inicie-o para disponibilizar a aplicação
 
-Como Executar:
-1)Clone esse repositorio:
-![image](https://github.com/user-attachments/assets/4f16ca7c-a2d2-45b9-90f1-7c6e1f5c1cbc)
+---
 
-2) Compile o projeto usando o Ant:
-![image](https://github.com/user-attachments/assets/02f1b5cb-fa6f-47fd-b497-95f93c0c8f82)
+## Instalação e Deploy  
+1. Clone este repositório:  
+```bash  
+git clone https://github.com/mvk999/Projeto-Final-Java
+```  
+2. Importe o banco de dados utilizando o HeidiSQL:  
+- Crie o banco (exemplo: `projeto_final_java`)  
+- Importe os scripts SQL presentes no diretório `[caminho dos scripts]`  
+3. Abra o projeto no NetBeans e ajuste as configurações de conexão com o banco de dados  
+4. Realize o deploy da aplicação no GlassFish pelo NetBeans:  
+- Clique com o botão direito no projeto e selecione **Run**  
+5. Acesse a aplicação pelo navegador:  
+```  
+http://localhost:8080/[nome_do_contexto]  
+```
 
-3)Execute o projeto em um servidor Apache Tomcat:
-Copie o conteúdo da pasta build para o diretório webapps do Tomcat.
-Inicie o Tomcat e acesse a aplicação através do navegador, no endereço http://localhost:8080/nome-do-projeto.
+---
 
-Todos os direitos deste código estão reservados aos seus respectivos criadores, Marcos Vinícius Pereira e Otávio Pacheco.
+## Uso  
+Acesse a aplicação via navegador para utilizar as funcionalidades disponíveis, como cadastro, edição, listagem e exclusão de dados. O sistema conta com validações e feedbacks para garantir a integridade e consistência das informações.
+
+---
+
+## Considerações Finais  
+Este projeto possui caráter acadêmico e foi desenvolvido com o intuito de consolidar os conhecimentos em Java EE, persistência de dados e deploy em servidor de aplicações, proporcionando uma base sólida para futuras aplicações corporativas.
+
+---
+
+## Autor  
+Marcos Vinícius Pereira
+Otávio Pacheco
+
+---
+
+## Contato  
+- GitHub: [https://github.com/mvk999](https://github.com/mvk999)  
+- LinkedIn: [https://www.linkedin.com/in/mvpereira2006](https://www.linkedin.com/in/mvpereira2006)
